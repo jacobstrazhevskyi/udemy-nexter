@@ -9,6 +9,10 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__img {
@@ -43,6 +47,10 @@
     justify-items: start;
 
     padding: 6rem 8vw;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
   }
 
   &__text {
